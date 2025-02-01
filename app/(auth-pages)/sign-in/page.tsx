@@ -4,11 +4,15 @@ import { SubmitButton } from "@/components/submit-button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import Link from "next/link";
+import Hero from "@/components/hero";
 
 export default async function Login(props: { searchParams: Promise<Message> }) {
   const searchParams = await props.searchParams;
   return (
-    <form className="flex-1 flex flex-col min-w-64">
+    <>
+    {/* <Hero/> */}
+    <div className="flex justify-center self-center rounded-lg glass p-20 mt-40">
+       <form className=" flex flex-col min-w-64">
       <h1 className="text-2xl font-medium">Sign in</h1>
       <p className="text-sm text-foreground">
         Don't have an account?{" "}
@@ -40,5 +44,8 @@ export default async function Login(props: { searchParams: Promise<Message> }) {
         <FormMessage message={searchParams} />
       </div>
     </form>
+    </div>
+   
+    </>
   );
 }

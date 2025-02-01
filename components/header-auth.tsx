@@ -28,21 +28,22 @@ export default async function AuthButton() {
             <Button
               asChild
               size="sm"
-              variant={"outline"}
+              variant="outline"
               disabled
-              className="opacity-75 cursor-none pointer-events-none"
+              className="opacity-50 cursor-not-allowed pointer-events-none border-2 border-blue-400 text-blue-400 px-6 py-2 rounded-xl font-semibold shadow-md"
             >
               <Link href="/sign-in">Sign in</Link>
             </Button>
             <Button
               asChild
               size="sm"
-              variant={"default"}
+              variant="default"
               disabled
-              className="opacity-75 cursor-none pointer-events-none"
+              className="opacity-50 cursor-not-allowed pointer-events-none border-2 bg-blue-500 text-gray-800 px-6 py-2 rounded-xl font-semibold shadow-md"
             >
               <Link href="/sign-up">Sign up</Link>
             </Button>
+
           </div>
         </div>
       </>
@@ -58,13 +59,24 @@ export default async function AuthButton() {
       </form>
     </div>
   ) : (
-    <div className="flex gap-2">
-      <Button asChild size="sm" variant={"outline"}>
-        <Link href="/sign-in">Sign in</Link>
-      </Button>
-      <Button asChild size="sm" variant={"default"}>
-        <Link href="/sign-up">Sign up</Link>
-      </Button>
-    </div>
+    <div className="flex gap-4">
+    <Button
+      asChild
+      size="sm"
+      variant="outline"
+      className="border-blue-400 bg-transparent text-blue-400 px-6 py-2 border-2 rounded-xl font-semibold hover:bg-blue-500 hover:text-white hover:border-blue-500 shadow-md transition duration-300"
+    >
+      <Link href="/sign-in">Sign in</Link>
+    </Button>
+    <Button
+      asChild
+      size="sm"
+      variant="default"
+      className="bg-blue-500 text-white px-6 py-2 rounded-xl font-semibold border-2 border-blue-500 hover:bg-blue-600 hover:border-blue-600 shadow-md transition duration-300"
+    >
+      <Link href="/sign-up">Sign up</Link>
+    </Button>
+  </div>
+  
   );
 }
