@@ -12,7 +12,7 @@ export default function Home() {
               Welcome to <span className="text-blue-500">Travel Planner</span>
             </h1>
             <p className="text-lg md:text-xl text-gray-800 mb-6 md:mb-8">
-              Plan your trips, explore destinations, and create unforgettable memories.
+            Build, personalize, and optimize your itineraries with our free AI trip planner. Designed for vacations, workations, and everyday adventures.
             </p>
 
             {/* Call-to-Action Buttons */}
