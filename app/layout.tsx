@@ -57,7 +57,6 @@ export default function RootLayout({
                 </div>
               </nav>
               <div className="flex flex-col  w-full">
-
             <Hero />
                 {children} 
               </div>
