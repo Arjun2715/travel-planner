@@ -38,9 +38,9 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <main className="min-h-screen flex flex-col items-center">
+          <main className="h-screen flex flex-col items-center">
             <div className="flex w-full flex-col items-start">
-              <nav className="w-full flex justify-center fixed top-0 glass dark:darkglass border-b border-b-foreground/10 h-16">
+              <nav className="w-full flex justify-center fixed top-0 glass dark:darkglass border-b border-b-foreground/10 h-16 z-50">
                 <div className="w-full max-w-5xl flex justify-between items-center p-3 px-5 text-sm">
                   <div className="flex gap-5 items-center font-semibold">
                     <Link className="font-semibold text-xl" href={"/"}>Travel Planner</Link>
@@ -56,8 +56,8 @@ export default function RootLayout({
 
                 </div>
               </nav>
-              <div className="flex flex-col  w-full">
-            <Hero />
+              <div className="flex flex-col  w-full pt-20">
+                <Hero />
                 {children} 
               </div>
               <footer className="w-full flex items-center justify-center">
