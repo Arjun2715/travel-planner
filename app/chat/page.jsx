@@ -53,7 +53,7 @@ export default function ChatPage() {
               key={index}
               className={`p-2 my-2 rounded-lg max-w-[75%] ${
                 msg.role === "user"
-                  ? "bg-blue-500 text-white  self-end flex flex-col"
+                  ? "bg-blue-500 text-white self-end flex flex-col"
                   : "bg-gray-300 text-black self-start"
               }`}
             >
