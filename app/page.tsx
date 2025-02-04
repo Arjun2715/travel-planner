@@ -5,7 +5,7 @@ import HomeImage1 from "@/app/Public/assets/images/home1.jpeg";
 import HomeImage2 from "@/app/Public/assets/images/home2.jpeg";
 export default function Home() {
   return (
-    <>
+    <> 
       <main className="flex justify-center items-center p-12 ">
         <div className="flex flex-col justify-start items-center space-y-4 text-center mt-20 w-[1500px]">
           <h1 className="text-[45px] font-bold ">Your Next Journey, Optimized</h1>
