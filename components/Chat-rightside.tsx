@@ -38,7 +38,7 @@ export class ChatIntrorightside extends Component<Props, State> {
               <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
               <g id="SVGRepo_iconCarrier">
                 <path
-                  d="M150 12H4M4 12L10 6M4 12L10 18" // Arrow path
+                  d="M150 12H4M4 12L10 6M4 12L10 18"  
                   stroke="#ffffff" // Arrow color
                   strokeWidth="1.5" // Increase stroke width for better visibility
                   strokeLinecap="round"
