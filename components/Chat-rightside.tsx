@@ -9,14 +9,13 @@ export class ChatIntrorightside extends Component<Props, State> {
 
   render() {
     return (
-        <div
+      <div
         className="flex-1 bg-cover bg-center rounded-lg"
         style={{
           backgroundImage: `url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')`,
           height: "400px", // Set a fixed height for the image container
         }}
-      >
-        {/* Text Section */}
+      > 
         <div className="absolute w-full h-full inset-0 flex flex-col justify-between p-6">
           {/* Top Text (h1) */}
           <h1 className="text-xl md:text-7xl  mt-20 font-bold text-white text-center">
