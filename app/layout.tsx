@@ -55,12 +55,51 @@ export default function RootLayout({
                   </div>
 
                 </div>
-              </nav>
-              <div className="flex flex-col  w-full pt-20">
-                <Hero />
-                {children} 
+              </nav><Hero />
+              <div className="flex flex-col justify-center items-center  w-full pt-20 glass">
+
+                {children}
               </div>
-              <footer className="w-full flex items-center justify-center">
+              <footer className="glass w-full">
+                <div className="w-[1500px] py-10 mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+                  <div className="text-center md:text-left">
+                    <div className="flex items-center gap-2">
+                      <span className="text-xl font-semibold">Trip Planner AI</span>
+                    </div>
+                    <p className="text-gray-500 mt-1">
+                      Turn your next trip into a hassle-free experience with Trip Planner AI.
+                    </p>
+                  </div>
+
+                  <div className="flex flex-wrap justify-center md:justify-start gap-8 mt-6 md:mt-0">
+                    <div>
+                      <h3 className="font-semibold">Legal</h3>
+                      <ul className="text-gray-500 space-y-1">
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                      </ul>
+                    </div>
+
+                    <div>
+                      <h3 className="font-semibold">Support</h3>
+                      <ul className="text-gray-500 space-y-1">
+                        <li><a href="#">Contact Us</a></li>
+                      </ul>
+                    </div>
+
+                    <div>
+                      <h3 className="font-semibold">Itineraries</h3>
+                      <ul className="text-gray-500 space-y-1">
+                        <li><a href="#">Community Trips</a></li>
+                        <li><a href="#">Find Destinations</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="text-center text-gray-500 text-sm mt-6">
+                  © 2023 Trip Planner AI. All rights reserved
+                </div>
               </footer>
             </div>
           </main>
