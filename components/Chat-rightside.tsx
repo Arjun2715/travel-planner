@@ -22,9 +22,9 @@ export class ChatIntrorightside extends Component<Props, State> {
             </p>
             <svg
               className="self-center"
-              width="400px" // Set width to 100px
-              height="40px" // Set height to 100px
-              viewBox="0 0 150 24" // Keep the viewBox the same to maintain proportions
+              width="400px"
+              height="40px"
+              viewBox="0 0 150 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
