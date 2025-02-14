@@ -3,14 +3,12 @@ import { FormMessage, Message } from "@/components/form-message";
 import { SubmitButton } from "@/components/submit-button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import Link from "next/link";
-import Hero from "@/components/hero";
+import Link from "next/link"; 
 
 export default async function Login(props: { searchParams: Promise<Message> }) {
   const searchParams = await props.searchParams;
   return (
-    <>
-      {/* <Hero/> */}
+    <> 
       <div className="flex justify-center self-center rounded-lg glass p-20  ">
         <form className=" flex flex-col justify-center min-w-64 h-auto">
           <h1 className="text-2xl font-medium">Sign in</h1>
