@@ -1,6 +1,6 @@
 "use client";
 import { Chat } from "@/components/Chat";
-import { ChatIntrorightside } from "@/components/ChatIntrorightside";
+import { ChatIntrorightside } from "@/components/Chat-Intro-rightside";
 
 export default function ChatPage() {
   return (

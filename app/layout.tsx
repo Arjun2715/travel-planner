@@ -56,7 +56,7 @@ export default function RootLayout({
 
                 </div>
               </nav>
-              {/* <Hero /> */}
+              <Hero />
               <div className="flex flex-col justify-center items-center  w-full  glass">
                 {children}
               </div>
@@ -69,6 +69,9 @@ export default function RootLayout({
                     <p className="text-gray-500 mt-1">
                       Turn your next trip into a hassle-free experience with Trip Planner AI.
                     </p>
+                    <div className="text-start text-gray-500 text-sm mt-6">
+                  © 2023 Trip Planner AI. All rights reserved
+                </div>
                   </div>
 
                   <div className="flex flex-wrap justify-center md:justify-start gap-8 mt-6 md:mt-0">
@@ -97,9 +100,7 @@ export default function RootLayout({
                   </div>
                 </div>
 
-                <div className="text-center text-gray-500 text-sm mt-6">
-                  © 2023 Trip Planner AI. All rights reserved
-                </div>
+               
               </footer>
             </div>
           </main>
